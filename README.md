@@ -70,5 +70,3 @@ This will check the port every minute and refresh the symlink if necessary.
 * `systemd` service on Linux
 * `launchd` plist on macOS
   so the symlink is automatically maintained in the background.
-
-```
