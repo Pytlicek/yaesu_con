@@ -61,6 +61,7 @@ This will check the port every minute and refresh the symlink if necessary.
 * The symlink is created in `/tmp`, which is cleared on reboot. The cron job will recreate it automatically.
 * On macOS, applications often work better with `/dev/cu.*` ports than with `/dev/tty.*`. The script tests both and uses whichever responds.
 * If you prefer a different symlink path (e.g. `/usr/local/dev/tty.SLAB_USBtoUARTx`) or need a different Hamlib model ID, adjust the constants in the script header.
+* On MacOS: `brew install autoconf automake pkg-config libev libfuse libusb` `brew install hamlib` or `brew update && brew upgrade hamlib`
 
 ---
 
